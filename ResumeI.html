@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nihal Mishra - Senior Web Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Optimized CSS for ATS and design */
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+            color: #2d3748;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .header {
+            text-align: center;
+            padding-bottom: 25px;
+            border-bottom: 2px solid #e2e8f0;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #1a365d;
+            margin: 0 0 8px 0;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            color: #4a5568;
+        }
+
+        .contact-item i {
+            color: #4299e1;
+        }
+
+        .section {
+            margin: 30px 0;
+            padding: 20px 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #4299e1;
+            display: inline-block;
+        }
+
+        .experience-item {
+            margin-bottom: 25px;
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+
+        .experience-title {
+            font-weight: 600;
+            color: #2d3748;
+            font-size: 17px;
+        }
+
+        .experience-company {
+            color: #4a5568;
+            font-size: 15px;
+        }
+
+        .experience-date {
+            color: #718096;
+            font-size: 14px;
+        }
+
+        .experience-list {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        .experience-list li {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 15px;
+        }
+
+        .experience-list li:before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: #4299e1;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 12px;
+            margin-top: 15px;
+        }
+
+        .skill-category {
+            background-color: #ebf8ff;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .skill-category h3 {
+            font-size: 15px;
+            color: #2b6cb0;
+            margin: 0 0 10px 0;
+            text-transform: uppercase;
+        }
+
+        .skill-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .skill-list li {
+            margin-bottom: 6px;
+            font-size: 14px;
+        }
+
+        .certification-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+            margin-top: 15px;
+        }
+
+        .certification-item {
+            background-color: #f7fafc;
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid #e2e8f0;
+            text-align: center;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .project-item {
+            padding: 12px;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+        }
+
+        .project-item a {
+            color: #2b6cb0;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .project-item a:hover {
+            text-decoration: underline;
+        }
+        /* Add to existing styles */
+/* Updated Project Section CSS */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.2rem;
+}
+
+.project-item {
+    padding: 1.2rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background: #ffffff;
+    transition: transform 0.2s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-3px);
+}
+
+.project-header {
+    margin-bottom: 1rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.project-title {
+    font-weight: 600;
+    color: #2b6cb0;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.tech-stack {
+    display: block;
+    font-size: 0.85rem;
+    color: #4a5568;
+    margin-bottom: 0.5rem;
+}
+
+.project-details {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.project-details li {
+    position: relative;
+    padding-left: 1.2rem;
+    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.project-details li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #4299e1;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-item {
+        padding: 1rem;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Nihal Mishra</h1>
+            <p>Senior Web Developer</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>7000630640</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:nihalm5930@gmail.com">nihalm5930@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-globe"></i>
+                    <a href="https://nihal5930.github.io/NihalMishra/">Portfolio</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/Nihal5930">GitHub</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/nihal-mishra-7a7b93347">LinkedIn</a>
+                </div>
+            </div>
+        </header>
+
+        <section class="section">
+            <h2>Professional Summary</h2>
+            <p>Full-stack developer with 3+ years experience delivering enterprise-scale web solutions. Specialized in PHP/Laravel ecosystem with expertise in REST API development, system integration, and data visualization. Proven track record in leading technical teams and implementing Agile methodologies to deliver projects 25% faster.</p>
+        </section>
+
+        <section class="section">
+            <h2>Professional Experience</h2>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="experience-title">Senior Web Developer</div>
+                        <div class="experience-company">Business Software India</div>
+                    </div>
+                    <div class="experience-date">Dec 2024 - Present</div>
+                </div>
+                <ul class="experience-list">
+                    <li>Led migration of enterprise Symfony systems to Laravel, reducing infrastructure costs by 30%</li>
+                    <li>Engineered RESTful APIs and integrated payment gateways, cloud services, and OAuth authentication systems</li>
+                    <li>Implemented SMTP and SMS API integrations, handling message delivery to 10,000+ concurrent users</li>
+                    <li>Designed event-driven task management system using Laravel listeners, automating critical workflows</li>
+                </ul>
+            </div>
+        
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="experience-title">Web Developer</div>
+                        <div class="experience-company">Sanspots</div>
+                    </div>
+                    <div class="experience-date">Feb 2024 - Aug 2024</div>
+                </div>
+                <ul class="experience-list">
+                    <li>Implemented real-time chat system using Laravel Eloquent ORM/MySQL, boosting user engagement by 40%</li>
+                    <li>Developed custom CMS reducing content moderation efforts by 50% through automated filtering systems</li>
+                    <li>Integrated ML models for data analysis, accelerating processing speed by 30%</li>
+                </ul>
+            </div>
+        
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="experience-title">Software Engineer</div>
+                        <div class="experience-company">Deepzone Technology</div>
+                    </div>
+                    <div class="experience-date">Dec 2022 - Dec 2023</div>
+                </div>
+                <ul class="experience-list">
+                    <li>Built high-performance web apps with dynamic UI components, improving user satisfaction by 35%</li>
+                    <li>Integrated ArcGIS with D3.js for spatial visualization, enhancing client decision-making efficiency</li>
+                </ul>
+            </div>
+        
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="experience-title">PHP Developer</div>
+                        <div class="experience-company">Konsolegroup</div>
+                    </div>
+                    <div class="experience-date">Dec 2021 - Dec 2022</div>
+                </div>
+                <ul class="experience-list">
+                    <li>Developed responsive interfaces using modern stack (HTML5/CSS3/ES6+), improving UX scores by 25%</li>
+                    <li>Created D3.js dashboards enhancing data comprehension by 30% for business stakeholders</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Core Technologies</h3>
+                    <ul class="skill-list">
+                        <li>PHP/Laravel</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>React/Next.js</li>
+                        <li>MySQL/PostgreSQL</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Practices</h3>
+                    <ul class="skill-list">
+                        <li>Git/GitHub</li>
+                        <li>Docker</li>
+                        <li>CI/CD Pipelines</li>
+                        <li>Agile Methodology</li>
+                    </ul>
+                </div>
+                <!-- Add more skill categories -->
+            </div>
+        </section>
+
+            
+<!-- Education Section -->
+<section class="section">
+    <h2>Education</h2>
+    
+    <div class="experience-item">
+        <div class="experience-header">
+            <div>
+                <div class="experience-title">Master of Computer Applications</div>
+                <div class="experience-company">Bhilai Institute of Technology</div>
+            </div>
+            <div class="experience-date">Aug 2019 - May 2021</div>
+        </div>
+    </div>
+
+    <div class="experience-item">
+        <div class="experience-header">
+            <div>
+                <div class="experience-title">Bachelor of Computer Applications</div>
+                <div class="experience-company">SSMV Bhilai</div>
+            </div>
+            <div class="experience-date">Aug 2015 - May 2019</div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section class="section">
+    <h2>Key Projects</h2>
+    <div class="project-grid">
+        <!-- Project Item 1 -->
+        <div class="project-item">
+            <div class="project-header">
+                <a href="https://matsuniversity.ac.in/" class="project-title">Mats University Portal</a>
+                <span class="tech-stack">Laravel | MySQL | React</span>
+            </div>
+            <ul class="project-details">
+                <li>Developed centralized university management system handling 15,000+ student records</li>
+                <li>Automated report generation reducing administrative workload by 40%</li>
+                <li>Implemented role-based access control for 5 different user types</li>
+            </ul>
+        </div>
+
+        <!-- Project Item 2 -->
+        <div class="project-item">
+            <div class="project-header">
+                <a href="https://npis.water.gov.my/" class="project-title">NPIS</a>
+                <span class="tech-stack">Laravel | PHP | ArcGIS</span>
+            </div>
+            <ul class="project-details">
+                <li>Built an ArcGIS system for clients to enable geolocation and precise location marking for construction projects.</li>
+                <li>Optimized caching mechanisms improving page load speed by 35%</li>
+                <li>Integrated payment gateways supporting 5+ payment methods</li>
+            </ul>
+        </div>
+
+        <!-- Project Item 3 -->
+        <div class="project-item">
+            <div class="project-header">
+                <a href="https://jobfairindia.in/" class="project-title">Job Fair Platform</a>
+                <span class="tech-stack">Laravel Livewire | MySQL | WebSockets</span>
+            </div>
+            <ul class="project-details">
+                <li>Created job portal connecting 200+ employers with 5,000+ candidates</li>
+                <li>Developed real-time chat system reducing response time by 60%</li>
+                <li>Implemented AI-based candidate matching system with 85% accuracy</li>
+            </ul>
+        </div>
+    </div>
+</section>
+    </div>
+</body>
+</html>

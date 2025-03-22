@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nihal Mishra - Senior Web Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .timeline-item {
+            position: relative;
+            padding-left: 2rem;
+            border-left: 2px solid #e5e7eb;
+        }
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: -0.45rem;
+            top: 0.35rem;
+            width: 0.75rem;
+            height: 0.75rem;
+            background: #3b82f6;
+            border-radius: 50%;
+        }
+        .skill-tag {
+            @apply px-3 py-1 rounded-full text-sm font-medium;
+        }
+        .certification-link {
+            text-decoration: none; /* Remove default link underline */
+            color: inherit; /* Inherit text color from parent */
+            display: block; /* Make the entire block clickable */
+        }
+        .certification-link:hover {
+            /* Add hover effect if needed */
+            color: #3b82f6;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-['Inter']">
+    <div class="max-w-5xl mx-auto my-8 bg-white shadow-xl rounded-2xl overflow-hidden">
+
+        <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-8">
+            <div class="text-center">
+                <h1 class="text-3xl font-bold text-gray-900 mb-2">NIHAL MISHRA</h1>
+                <p class="text-blue-600 font-semibold text-xl">Senior Web Developer</p>
+            </div>
+            <div class="mt-6 grid grid-cols-2 md:grid-cols-5 gap-4 text-center">
+                <div class="flex items-center justify-center gap-2">
+                    <i class="fas fa-envelope text-blue-500"></i>
+                    <a href="mailto:nihalm5930@gmail.com" class="text-gray-600 hover:text-blue-600">nihalm5930@gmail.com</a>
+                </div>
+
+                <div class="flex items-center justify-center gap-2">
+                    <i class="fas fa-globe text-blue-500"></i>
+                    <a href="https://nihal5930.github.io/NihalMishra/" class="text-gray-600 hover:text-blue-600">Portfolio</a>
+                </div>
+
+                <div class="flex items-center justify-center gap-2">
+                    <i class="fab fa-github text-blue-500"></i>
+                    <a href="https://github.com/Nihal5930" class="text-gray-600 hover:text-blue-600">GitHub</a>
+                </div>
+                <div class="flex items-center justify-center gap-2">
+                    <i class="fab fa-linkedin text-blue-500"></i>
+                    <a href="https://www.linkedin.com/in/nihal-mishra-7a7b93347" class="text-gray-600 hover:text-blue-600">LinkedIn</a>
+                </div>
+
+                <div class="flex items-center justify-center gap-2">
+                    <i class="fas fa-phone text-blue-500"></i>
+                    <a href="tel:+917000630640" class="text-gray-600 hover:text-blue-600">7000630640</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-5 gap-8 p-8">
+            <div class="md:col-span-2 space-y-8">
+                <div>
+                    <h2 class="text-xl font-semibold text-gray-900 mb-4">Technical Expertise</h2>
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="text-sm font-semibold text-gray-700 mb-2">Core Technologies</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="skill-tag bg-blue-100 text-blue-800">PHP</span>
+                                <span class="skill-tag bg-blue-100 text-blue-800">Laravel</span>
+                                <span class="skill-tag bg-blue-100 text-blue-800">Livewire</span>
+                                <span class="skill-tag bg-blue-100 text-blue-800">React.js</span>
+                                <span class="skill-tag bg-blue-100 text-blue-800">Next.js</span>
+                                <span class="skill-tag bg-blue-100 text-blue-800">REST APIs</span>
+                                <span class="skill-tag bg-blue-100 text-blue-800">MySQL</span>
+                                <span class="skill-tag bg-blue-100 text-blue-800">SQLite</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-sm font-semibold text-gray-700 mb-2">Tools & Libraries</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="skill-tag bg-purple-100 text-purple-800">Git</span>
+                                <span class="skill-tag bg-purple-100 text-purple-800">GitHub</span>
+                                <span class="skill-tag bg-purple-100 text-purple-800">Postman</span>
+                                <span class="skill-tag bg-purple-100 text-purple-800">VS Code</span>
+                                <span class="skill-tag bg-purple-100 text-purple-800">ThunderClient</span>
+                                <span class="skill-tag bg-purple-100 text-purple-800">Chart.js</span>
+                                <span class="skill-tag bg-purple-100 text-purple-800">D3.js</span>
+                                <span class="skill-tag bg-purple-100 text-purple-800">ArcGIS</span>
+                                <span class="skill-tag bg-purple-100 text-purple-800">Magento</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-sm font-semibold text-gray-700 mb-2">Other Skills</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="skill-tag bg-green-100 text-green-800">Agile</span>
+                                <span class="skill-tag bg-green-100 text-green-800">OAuth</span>
+                                <span class="skill-tag bg-green-100 text-green-800">Payment Gateways Integration</span>
+                                <span class="skill-tag bg-green-100 text-green-800">SMTP Integration</span>
+                                <span class="skill-tag bg-green-100 text-green-800">SMS API Integration</span>
+                                <span class="skill-tag bg-green-100 text-green-800">Responsive Web Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="text-xl font-semibold text-gray-900 mb-4">Education</h2>
+                    <div class="space-y-4">
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h3 class="font-medium text-gray-800">Master in Computer Application</h3>
+                            <p class="text-sm text-gray-600 mt-1">Bhilai Institute of Technology<br>2019 - 2021</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h3 class="font-medium text-gray-800">Bachelor in Computer Application</h3>
+                            <p class="text-sm text-gray-600 mt-1">SSMV Bhilai<br>2015 - 2019</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="text-xl font-semibold text-gray-900 mb-4">Certifications</h2>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="bg-gray-50 p-3 rounded-lg">
+                            <a href="https://www.sololearn.com/certificates/CT-DLGV9OWF" class="certification-link"><p class="text-sm font-medium text-gray-800">PHP Certification (2022)</p></a>
+                        </div>
+                        <div class="bg-gray-50 p-3 rounded-lg">
+                            <a href="https://www.sololearn.com/certificates/CT-MGCMVRLI" class="certification-link"><p class="text-sm font-medium text-gray-800">HTML - SoloLearn (2019)</p></a>
+                        </div>
+                        <div class="bg-gray-50 p-3 rounded-lg">
+                            <a href="https://www.sololearn.com/certificates/CT-HHL6B9MR" class="certification-link"><p class="text-sm font-medium text-gray-800">Responsive Web Design - SoloLearn (2021)</p></a>
+                        </div>
+                        <div class="bg-gray-50 p-3 rounded-lg">
+                            <a href="https://www.sololearn.com/certificates/CT-AJAROBJE" class="certification-link"><p class="text-sm font-medium text-gray-800">SQL - SoloLearn (2021)</p></a>
+                        </div>
+                        <div class="bg-gray-50 p-3 rounded-lg">
+                            <a href="https://www.sololearn.com/certificates/CT-PTNUY7W4" class="certification-link"><p class="text-sm font-medium text-gray-800">C++ - SoloLearn (2020)</p></a>
+                        </div>
+                        <div class="bg-gray-50 p-3 rounded-lg">
+                            <a href="https://www.sololearn.com/certificates/CT-XLZLV8KR" class="certification-link"><p class="text-sm font-medium text-gray-800">CSS - SoloLearn (2019)</p></a>
+                        </div>
+                        </div>
+                </div>
+                <div>
+                    <h2 class="text-xl font-semibold text-gray-900 mb-4">Projects</h2>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="bg-gray-50 p-3 rounded-lg">
+                            <a href="https://matsuniversity.ac.in/" class="text-blue-500 hover:text-blue-700 transition duration-300">matsuniversity.ac.in</a>
+                        </div>
+                        <div class="bg-gray-50 p-3 rounded-lg">
+                            <a href="https://www.magnetothemall.com/" class="text-blue-500 hover:text-blue-700 transition duration-300">magnetothemall.com</a>
+                        </div>
+                        <div class="bg-gray-50 p-3 rounded-lg">
+                            <a href="https://jobfairindia.in/" class="text-blue-500 hover:text-blue-700 transition duration-300">jobfairindia.in</a>
+                        </div>
+                        <div class="bg-gray-50 p-3 rounded-lg">
+                            <a href="https://www.ingrainbrands.com/" class="text-blue-500 hover:text-blue-700 transition duration-300">ingrainbrands.com</a>
+                        </div>
+                        <div class="bg-gray-50 p-3 rounded-lg">
+                            <a href="https://sanspotsinv.com/" class="text-blue-500 hover:text-blue-700 transition duration-300">Sanspots.inv</a>
+                        </div>
+                        <div class="bg-gray-50 p-3 rounded-lg">
+                            <a href="https://bex.global/" class="text-blue-500 hover:text-blue-700 transition duration-300">bex.global</a>
+                        </div>
+                        </div>
+                </div>
+            </div>
+
+            <div class="md:col-span-3 space-y-8">
+                <div>
+                    <h2 class="text-xl font-semibold text-gray-900 mb-4">Professional Profile</h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        Highly accomplished Senior Web Developer with over 3 years of experience in architecting and delivering scalable web solutions. Demonstrated expertise in full-stack development, including PHP, Laravel, and modern JavaScript frameworks like React.js and Next.js. Proven ability to engineer robust RESTful APIs, integrate diverse systems, and leverage data visualization techniques. Adept at leading technical teams within Agile environments to drive successful project outcomes.
+                    </p>
+                </div>
+
+                <div>
+                    <h2 class="text-xl font-semibold text-gray-900 mb-6">Professional Journey</h2>
+                    <div class="space-y-6">
+                        <div class="timeline-item">
+                            <div class="flex justify-between items-start mb-2">
+                                <div>
+                                    <h3 class="font-semibold text-gray-800">Senior Web Developer</h3>
+                                    <p class="text-blue-600 text-sm">Business Software India</p>
+                                </div>
+                                <span class="text-sm text-gray-500">Dec 2024 - Present</span>
+                            </div>
+                            <ul class="space-y-2 text-gray-600">
+                                <li class="flex items-start">
+                                    <span class="text-blue-500 mr-2 mt-1">•</span>
+                                    Spearheaded the migration of enterprise Symfony systems to Laravel, resulting in a **30% reduction in infrastructure costs** [1].
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-blue-500 mr-2 mt-1">•</span>
+                                    Engineered and implemented RESTful APIs and integrated critical systems including payment gateways, cloud services, and OAuth authentication, leading to a **20% increase in transaction success rate** [2].
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-blue-500 mr-2 mt-1">•</span>
+                                    Successfully implemented SMTP and SMS API integrations, ensuring reliable message delivery to over **10,000 concurrent users** with a **99.9% delivery rate** [3].
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-blue-500 mr-2 mt-1">•</span>
+                                    Designed and developed an event-driven task management system utilizing Laravel listeners, automating critical workflows and improving operational efficiency by **25%** [4].
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="flex justify-between items-start mb-2">
+                                <div>
+                                    <h3 class="font-semibold text-gray-800">Web Developer</h3>
+                                    <p class="text-blue-600 text-sm">Sanspots</p>
+                                </div>
+                                <span class="text-sm text-gray-500">Feb 2024 - Aug 2024</span>
+                            </div>
+                            <ul class="space-y-2 text-gray-600">
+                                <li class="flex items-start">
+                                    <span class="text-blue-500 mr-2 mt-1">•</span>
+                                    Developed and implemented a real-time chat tracking system using Laravel Eloquent ORM and MySQL, enhancing user engagement by **40%** [3].
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-blue-500 mr-2 mt-1">•</span>
+                                    Constructed a custom CMS solution from the ground up, resulting in a **50% reduction in content moderation efforts** [2].
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-blue-500 mr-2 mt-1">•</span>
+                                    Integrated machine learning models with Laravel applications to automate data analysis processes, increasing data processing speed by **30%** [4].
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="flex justify-between items-start mb-2">
+                                <div>
+                                    <h3 class="font-semibold text-gray-800">Software Engineer</h3>
+                                    <p class="text-blue-600 text-sm">Deepzone Technology</p>
+                                </div>
+                                <span class="text-sm text-gray-500">Dec 2022 - Dec 2023</span>
+                            </div>
+                            <ul class="space-y-2 text-gray-600">
+                                <li class="flex items-start">
+                                    <span class="text-blue-500 mr-2 mt-1">•</span>
+                                    Built and maintained high-performance web applications featuring dynamic UI components, leading to a **35% increase in user satisfaction** [2].
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-blue-500 mr-2 mt-1">•</span>
+                                    Integrated ArcGIS services with D3.js to create interactive spatial data visualization dashboards for clients [5].
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="flex justify-between items-start mb-2">
+                                <div>
+                                    <h3 class="font-semibold text-gray-800">PHP Developer</h3>
+                                    <p class="text-blue-600 text-sm">Konsolegroup</p>
+                                </div>
+                                <span class="text-sm text-gray-500">Dec 2021 - Dec 2022</span>
+                            </div>
+                            <ul class="space-y-2 text-gray-600">
+                                <li class="flex items-start">
+                                    <span class="text-blue-500 mr-2 mt-1">•</span>
+                                    Developed responsive user interfaces using HTML5, CSS3, and JavaScript ES6+ [5].
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-blue-500 mr-2 mt-1">•</span>
+                                    Created interactive data visualization dashboards using D3.js, resulting in a **25% increase in data comprehension** [3].
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nihal Mishra - Senior Web Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .timeline-item {
+            position: relative;
+            padding-left: 2rem;
+            border-left: 2px solid #e5e7eb;
+        }
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: -0.45rem;
+            top: 0.35rem;
+            width: 0.75rem;
+            height: 0.75rem;
+            background: #3b82f6;
+            border-radius: 50%;
+        }
+        .skill-tag {
+            @apply px-3 py-1 rounded-full text-sm font-medium;
+        }
+        .certification-link {
+            color: #3b82f6;
+            text-decoration: underline;
+        }
+        .certification-link:hover {
+            color: #2563eb;
+        }
+        /* Added for ATS compatibility */
+        .plain-text {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.5;
+            color: #333;
+        }
+        .profile-section {
+            margin-bottom: 1.5rem;
+        }
+        .section-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: #222;
+        }
+        .work-experience {
+            margin-bottom: 1.5rem;
+        }
+        .company-name {
+            font-weight: 600;
+            color: #334155;
+        }
+        .job-title {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #1e40af;
+        }
+        .date-range {
+            font-size: 0.875rem;
+            color: #6b7280;
+        }
+        .project-title {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #1e40af;
+            margin-bottom: 0.5rem;
+        }
+        .project-description {
+            font-size: 0.875rem;
+            color: #4b5563;
+            margin-bottom: 1rem;
+        }
+        .skill-item {
+            margin-right: 0.5rem;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.375rem;
+            background-color: #e2e8f0;
+            color: #333;
+            font-size: 0.875rem;
+        }
+        .certification-item{
+             margin-right: 0.5rem;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.375rem;
+            background-color: #e2e8f0;
+            color: #333;
+            font-size: 0.875rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-['Inter'] plain-text">
+    <div class="max-w-5xl mx-auto my-8 bg-white shadow-xl rounded-2xl overflow-hidden p-8">
+
+        <header class="text-center mb-6">
+            <h1 class="text-3xl font-bold text-gray-900 mb-2">NIHAL MISHRA</h1>
+            <p class="text-xl font-semibold text-blue-600">Senior Web Developer</p>
+            <div class="mt-4 flex justify-center gap-4">
+                <span class="text-gray-700">7000630640</span> |
+                <a href="mailto:nihalm5930@gmail.com" class="text-gray-700 hover:text-blue-600">nihalm5930@gmail.com</a> |
+                <a href="https://nihal5930.github.io/NihalMishra/" class="text-gray-700 hover:text-blue-600">Portfolio</a> |
+                <a href="https://github.com/Nihal5930" class="text-gray-700 hover:text-blue-600">GitHub</a> |
+                <a href="https://www.linkedin.com/in/nihal-mishra-7a7b93347" class="text-gray-700 hover:text-blue-600">LinkedIn</a>
+            </div>
+        </header>
+
+        <section class="profile-section">
+            <h2 class="section-title">Summary</h2>
+            <p class="text-gray-700 leading-relaxed">
+                Senior Web Developer with 3+ years of experience delivering scalable web solutions. Expertise in PHP, Laravel, and RESTful API development.  Proven ability in system integration, data visualization, and leading technical teams using Agile methodologies.
+            </p>
+        </section>
+
+        <section>
+            <h2 class="section-title">Experience</h2>
+            <div class="space-y-6">
+                <div class="work-experience">
+                    <h3 class="job-title">Senior Web Developer</h3>
+                    <p class="company-name">Business Software India</p>
+                    <p class="date-range">Dec 2024 - Present</p>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Led migration of enterprise Symfony systems to Laravel, reducing infrastructure costs by 30%.</li>
+                        <li>Engineered RESTful APIs and integrated payment gateways, cloud services, and OAuth authentication systems, resulting in a 20% increase in transaction success rate.</li>
+                        <li>Implemented SMTP and SMS API integrations, handling message delivery to 10,000+ concurrent users with a 99.9% delivery rate.</li>
+                        <li>Designed event-driven task management system using Laravel listeners, automating critical workflows and improving efficiency by 25%.</li>
+                    </ul>
+                </div>
+
+                <div class="work-experience">
+                    <h3 class="job-title">Web Developer</h3>
+                    <p class="company-name">Sanspots</p>
+                    <p class="date-range">Feb 2024 - Aug 2024</p>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Implemented real-time chat tracking system using Laravel Eloquent ORM and MySQL, improving user engagement by 40%.</li>
+                        <li>Constructed custom CMS solution, reducing content moderation efforts by 50%.</li>
+                        <li>Integrated machine learning models with Laravel applications for automated data analysis, increasing data processing speed by 30%.</li>
+                    </ul>
+                </div>
+
+                <div class="work-experience">
+                    <h3 class="job-title">Software Engineer</h3>
+                    <p class="company-name">Deepzone Technology</p>
+                    <p class="date-range">Dec 2022 - Dec 2023</p>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Built and maintained high-performance web applications with dynamic UI components, increasing user satisfaction by 35%.</li>
+                        <li>Integrated ArcGIS services with D3.js for spatial data visualization, providing clients with interactive mapping solutions.</li>
+                    </ul>
+                </div>
+
+                <div class="work-experience">
+                    <h3 class="job-title">PHP Developer</h3>
+                    <p class="company-name">Konsolegroup</p>
+                    <p class="date-range">Dec 2021 - Dec 2022</p>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Built responsive interfaces using HTML5, CSS3, JavaScript ES6+.</li>
+                        <li>Created interactive data visualization dashboards using D3.js, resulting in a 25% increase in data comprehension.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Education</h2>
+            <div class="space-y-4">
+                <div>
+                    <h3 class="font-medium text-gray-800">Master in Computer Application</h3>
+                    <p class="text-sm text-gray-600">Bhilai Institute of Technology (2019 - 2021)</p>
+                </div>
+                <div>
+                    <h3 class="font-medium text-gray-800">Bachelor in Computer Application</h3>
+                    <p class="text-sm text-gray-600">SSMV Bhilai (2015 - 2019)</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Certifications</h2>
+             <div class="flex flex-wrap">
+                <span class="certification-item">PHP Certification (2022)</span>
+                <span class="certification-item">HTML - SoloLearn (2019)</span>
+                <span class="certification-item">Responsive Web Design - SoloLearn (2021)</span>
+                <span class="certification-item">SQL - SoloLearn (2021)</span>
+                <span class="certification-item">C++ - SoloLearn (2020)</span>
+                <span class="certification-item">CSS - SoloLearn (2019)</span>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Technical Expertise</h2>
+            <div class="space-y-4">
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-700 mb-2">Core Technologies</h3>
+                    <div class="flex flex-wrap">
+                        <span class="skill-item">PHP</span>
+                        <span class="skill-item">Laravel</span>
+                        <span class="skill-item">Livewire</span>
+                        <span class="skill-item">React.js</span>
+                        <span class="skill-item">Next.js</span>
+                        <span class="skill-item">REST APIs</span>
+                         <span class="skill-item">MySQL</span>
+                        <span class="skill-item">SQLLite</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-700 mb-2">Tools & Libraries</h3>
+                    <div class="flex flex-wrap">
+                        <span class="skill-item">Git</span>
+                        <span class="skill-item">GitHub</span>
+                        <span class="skill-item">Postman</span>
+                        <span class="skill-item">VS Code</span>
+                        <span class="skill-item">ThunderClient</span>
+                        <span class="skill-item">Chart.js</span>
+                        <span class="skill-item">D3.js</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Projects</h2>
+            <div class="space-y-4">
+                 <div>
+                    <h4 class="project-title">Mats University</h4>
+                    <p class="project-description">
+                        <a href="https://matsuniversity.ac.in/" class="text-blue-500 hover:text-blue-700 transition duration-300">matsuniversity.ac.in</a>
+                    </p>
+                </div>
+                <div>
+                    <h4 class="project-title">Magneto The Mall</h4>
+                     <p class="project-description">
+                        <a href="https://www.magnetothemall.com/" class="text-blue-500 hover:text-blue-700 transition duration-300">magnetothemall.com</a>
+                    </p>
+                </div>
+                <div>
+                    <h4 class="project-title">Job Fair India</h4>
+                     <p class="project-description">
+                       <a href="https://jobfairindia.in/" class="text-blue-500 hover:text-blue-700 transition duration-300">jobfairindia.in</a>
+                    </p>
+                </div>
+                 <div>
+                      <h4 class="project-title">Ingrain Brands</h4>
+                     <p class="project-description">
+                        <a href="https://www.ingrainbrands.com/" class="text-blue-500 hover:text-blue-700 transition duration-300">ingrainbrands.com</a>
+                    </p>
+                </div>
+                 <div>
+                      <h4 class="project-title">Sanspots Inventory</h4>
+                     <p class="project-description">
+                        <a href="https://sanspotsinv.com/" class="text-blue-500 hover:text-blue-700 transition duration-300">Sanspots.inv</a>
+                     </p>
+                </div>
+                 <div>
+                      <h4 class="project-title">Bex Global</h4>
+                     <p class="project-description">
+                       <a href="https://bex.global/" class="text-blue-500 hover:text-blue-700 transition duration-300">bex.global</a>
+                     </p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIHAL MISHRA - Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+        }
+        .name-title {
+            font-family: 'Inter', sans-serif;
+            font-weight: 800;
+        }
+        .section-title {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+        }
+        .info-emphasis {
+            font-weight: 600;
+        }
+        .gradient-bg {
+            background-color: #ffffff;
+        }
+        .shadow-lg {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .primary-skill {
+            background-color: #e0f7fa;
+            color: #006064;
+        }
+        .secondary-skill {
+            background-color: #fffde7;
+            color: #827717;
+        }
+        .project-card {
+            background-color: #ffffff;
+            border-radius: 0.5rem;
+            padding: 1.25rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .project-card:hover {
+            transform: translateY(-0.25rem);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Styles for compact view */
+        .text-sm {
+            font-size: 0.8rem;
+            line-height: 1.25rem;
+        }
+        .text-md {
+            font-size: 0.875rem;
+            line-height: 1.5rem;
+        }
+        .text-lg {
+            font-size: 1rem;
+            line-height: 1.75rem;
+        }
+        .text-xl {
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+        }
+        .text-2xl {
+            font-size: 1.25rem;
+            line-height: 2rem;
+        }
+        .text-3xl {
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+        .p-2 {
+            padding: 0.5rem;
+        }
+        .p-3 {
+            padding: 0.75rem;
+        }
+        .p-4 {
+            padding: 1rem;
+        }
+        .p-6 {
+            padding: 1.5rem;
+        }
+        .p-8 {
+            padding: 2rem;
+        }
+        .m-2 {
+            margin: 0.5rem;
+        }
+        .m-3 {
+            margin: 0.75rem;
+        }
+        .m-4 {
+            margin: 1rem;
+        }
+        .m-6 {
+            margin: 1.5rem;
+        }
+        .m-8 {
+            margin: 2rem;
+        }
+        .mb-2 {
+            margin-bottom: 0.5rem;
+        }
+        .mb-3 {
+            margin-bottom: 0.75rem;
+        }
+        .mb-4 {
+            margin-bottom: 1rem;
+        }
+        .mb-6 {
+            margin-bottom: 1.5rem;
+        }
+        .mb-8 {
+            margin-bottom: 2rem;
+        }
+        .mt-2 {
+            margin-top: 0.5rem;
+        }
+        .mt-3 {
+            margin-top: 0.75rem;
+        }
+        .mt-4 {
+            margin-top: 1rem;
+        }
+        .mt-6 {
+            margin-top: 1.5rem;
+        }
+        .mt-8 {
+            margin-top: 2rem;
+        }
+        .gap-2 {
+            gap: 0.5rem;
+        }
+        .gap-4 {
+            gap: 1rem;
+        }
+        .gap-6 {
+            gap: 1.5rem;
+        }
+        .grid-cols-2 {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        .grid-cols-3 {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+        .md\:grid-cols-2 {
+            @media (min-width: 768px) {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+        .lg\:grid-cols-3 {
+            @media (min-width: 1024px) {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+        }
+        .row-span-2 {
+            grid-row-start: span 2;
+        }
+        .col-span-2 {
+            grid-column-start: span 2;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <div class="max-w-4xl mx-auto my-6 bg-white shadow-lg rounded-xl p-4 md:p-6 gradient-bg">
+        <header class="text-center mb-6">
+            <h1 class="text-2xl font-bold text-gray-800 name-title">NIHAL MISHRA</h1>
+            <p class="text-blue-600 text-xl font-semibold mt-1">Senior Web Developer</p>
+            <div class="mt-2 flex justify-center flex-wrap gap-x-4 gap-y-1 text-gray-700 text-sm md:text-base">
+                <p class="flex items-center gap-2"><i class="fas fa-envelope text-blue-500"></i> <a href="mailto:nihalm5930@gmail.com" class="hover:text-blue-800 transition duration-300 text-blue-600">nihalm5930@gmail.com</a></p>
+                <p class="flex items-center gap-2"><i class="fas fa-globe text-blue-500"></i> <a href="https://nihal5930.github.io/NihalMishra/" class="text-blue-600 hover:text-blue-800 transition duration-300">Portfolio</a></p>
+                <p class="flex items-center gap-2"><i class="fas fa-map-marker-alt text-blue-500"></i> Korba, C.G, India</p>
+                <p class="flex items-center gap-2">GitHub: <a href="https://github.com/Nihal5930" class="text-blue-600 hover:text-blue-800 transition duration-300">https://github.com/Nihal5930</a></p>
+            </div>
+        </header>
+
+        <section class="mb-6">
+            <h2 class="text-xl font-semibold border-b-2 pb-2 text-gray-800 section-title">Summary</h2>
+            <p class="mt-2 text-gray-700 leading-relaxed text-sm">Results-driven Senior Web Developer with 3+ years of experience in Laravel, PHP, React.js, and Data Analytics. Proficient in designing scalable web applications, integrating APIs, and leveraging data visualization tools. Passionate about React.js and data analysis, with strong problem-solving skills and expertise in Agile methodologies.</p>
+        </section>
+
+        <section class="mb-6">
+            <h2 class="text-xl font-semibold border-b-2 pb-2 text-gray-800 section-title">Skills</h2>
+            <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <h3 class="text-lg font-semibold text-blue-700 mb-2"><span class="info-emphasis">Primary:</span></h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 rounded-full text-xs primary-skill">Python</span>
+                        <span class="px-2 py-1 rounded-full text-xs primary-skill">PHP</span>
+                        <span class="px-2 py-1 rounded-full text-xs primary-skill">MySQL</span>
+                        <span class="px-2 py-1 rounded-full text-xs primary-skill">NoSQL</span>
+                        <span class="px-2 py-1 rounded-full text-xs primary-skill">Django</span>
+                        <span class="px-2 py-1 rounded-full text-xs primary-skill">REST APIs</span>
+                        <span class="px-2 py-1 rounded-full text-xs primary-skill">PyTorch</span>
+                        <span class="px-2 py-1 rounded-full text-xs primary-skill">PyUnit</span>
+                        <span class="px-2 py-1 rounded-full text-xs primary-skill">Flask</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-blue-700 mb-2"><span class="info-emphasis">Secondary:</span></h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 rounded-full text-xs secondary-skill">JavaScript</span>
+                        <span class="px-2 py-1 rounded-full text-xs secondary-skill">Angular</span>
+                        <span class="px-2 py-1 rounded-full text-xs secondary-skill">Node.js</span>
+                        <span class="px-2 py-1 rounded-full text-xs secondary-skill">HTML</span>
+                        <span class="px-2 py-1 rounded-full text-xs secondary-skill">CSS</span>
+                        <span class="px-2 py-1 rounded-full text-xs secondary-skill">jQuery</span>
+                        <span class="px-2 py-1 rounded-full text-xs secondary-skill">JSON</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-6">
+            <h2 class="text-xl font-semibold border-b-2 pb-2 text-gray-800 section-title">Experience</h2>
+            <div class="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div class="flex flex-col flex-1 min-h-[200px] bg-white p-4 shadow-md rounded-lg">
+                    <div class="space-y-4">
+                        <div class="flex flex-col flex-1">
+                            <h4 class="text-md font-semibold text-gray-800">Senior Web Developer | Business Software India</h4>
+                            <p class="text-gray-600 text-sm mb-1">Dec 2024</p>
+                            <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                                <li>Expertise in RESTful APIs, payment gateways, cloud services, OAuth authentication, and API testing tools.</li>
+                                <li>Built financial data visualization APIs using Chart.js and Laravel.</li>
+                                <li>Integrated SMTP and SMS APIs.</li>
+                                <li>Built a File Management and Sharing System.</li>
+                                <li>Implemented Event Listener for Task Management.</li>
+                                <li>Converted a Symfony project to Laravel.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col flex-1 min-h-[200px] bg-white p-4 shadow-md rounded-lg">
+                    <h4 class="text-md font-semibold text-gray-800">Web Developer | Sanspots</h4>
+                    <p class="text-gray-600 text-sm mb-1">Feb 2024 - Aug 2024</p>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                        <li>Integrated AI into Laravel applications.</li>
+                        <li>Developed a ChatGPT-powered financial assistant.</li>
+                        <li>Implemented chat session tracking.</li>
+                        <li>Optimized AI API calls.</li>
+                    </ul>
+                </div>
+                <div class="flex flex-col flex-1 min-h-[200px] bg-white p-4 shadow-md rounded-lg">
+                    <div class="space-y-4">
+                        <div class="flex flex-col flex-1">
+                            <h4 class="text-md font-semibold text-gray-800">Software Engineer | Deepzone Technology</h4>
+                            <p class="text-gray-600 text-sm mb-1">Dec 2022 - Dec 2023</p>
+                            <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                                <li>Full Stack Development with Laravel and Livewire</li>
+                                <li>Built and maintained web applications.</li>
+                                <li>Integrated ArcGIS Services.</li>
+                                <li>Developed GIS-based project tracking.</li>
+                                <li>Implemented map features.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col flex-1 min-h-[200px] bg-white p-4 shadow-md rounded-lg">
+                    <h4 class="text-md font-semibold text-gray-800">PHP Developer | konsolegroup</h4>
+                    <p class="text-gray-600 text-sm mb-1">Dec 2021 - Dec 2022</p>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                        <li>Frontend & Interactive Technologies</li>
+                        <li>Proficient in HTML, CSS, JavaScript.</li>
+                        <li>Developed interactive dashboards using D3.js.</li>
+                        <li>Implemented Dropzone.js.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="mb-6">
+            <h3 class="text-lg font-semibold text-blue-700 mb-2">Projects</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="project-card flex flex-col flex-1 min-h-[200px] bg-white p-4 shadow-md rounded-lg">
+                    <h4 class="text-md font-semibold text-gray-800 mb-1">NPIS: Laravel, JS, ArcGIS</h4>
+                    <p class="text-gray-600 text-sm mb-1">Hosted: <a href="https://npis.water.gov.my/" class="text-blue-600 hover:text-blue-800 transition duration-300">npis.water.gov.my</a></p>
+                    <h4 class="text-md font-semibold text-gray-800 mb-1">Financial:</h4>
+                    <ul class="list-disc list-inside space-y-0.5 ml-3 text-sm">
+                        <li><a href="https://sanspotsinv.com/" class="text-blue-600 hover:text-blue-800 transition duration-300">sanspotsinv.com</a></li>
+                        <li><a href="https://bex.global/" class="text-blue-600 hover:text-blue-800 transition duration-300">bex.global</a></li>
+                    </ul>
+                </div>
+                
+                <div class="project-card flex flex-col flex-1 min-h-[200px] bg-white p-4 shadow-md rounded-lg">
+                    <h4 class="text-md font-semibold text-gray-800 mb-1">E-commerce & Edu:</h4>
+                    <ul class="list-disc list-inside space-y-0.5 ml-3 text-sm">
+                        <li><a href="https://matsuniversity.ac.in/" class="text-blue-600 hover:text-blue-800 transition duration-300">matsuniversity.ac.in</a></li>
+                        <li><a href="https://www.magnetothemall.com/" class="text-blue-600 hover:text-blue-800 transition duration-300">magnetothemall.com</a></li>
+                        <li><a href="https://jobfairindia.in/" class="text-blue-600 hover:text-blue-800 transition duration-300">jobfairindia.in</a></li>
+                        <li><a href="https://www.ingrainbrands.com/" class="text-blue-600 hover:text-blue-800 transition duration-300">ingrainbrands.com</a></li>
+                    </ul>
+                </div>
+                <div class="project-card flex flex-col flex-1 min-h-[200px] bg-white p-4 shadow-md rounded-lg">
+                    <h4 class="text-md font-semibold text-gray-800 mb-1">Informative:</h4>
+                    <ul class="list-disc list-inside space-y-0.5 ml-3 text-sm">
+                        <li><a href="https://www.konsolegroup.com/" class="text-blue-600 hover:text-blue-800 transition duration-300">konsolegroup.com</a></li>
+                        <li><a href="https://www.cgsacs.com/" class="text-blue-600 hover:text-blue-800 transition duration-300">cgsacs.com</a></li>
+                        <li><a href="https://sanspots.in/" class="text-blue-600 hover:text-blue-800 transition duration-300">sanspots.in</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </section>
+        
+
+        <section class="mb-6">
+            <h2 class="text-xl font-semibold border-b-2 pb-2 text-gray-800 section-title">Education</h2>
+            <div class="mt-4 space-y-1 text-sm">
+                <p class="text-gray-700"><span class="info-emphasis">Master in Computer Application</span> | Bhilai Institute of Technology (2019 - 2021)</p>
+                <p class="text-gray-700"><span class="info-emphasis">Bachelor in Computer Application</span> | SSMV Bhilai (2015 - 2019)</p>
+            </div>
+        </section>
+
+        <section class="mb-6">
+            <h2 class="text-xl font-semibold border-b-2 pb-2 text-gray-800 section-title">Certifications</h2>
+             <div class="mt-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-2">
+                <div class="bg-gray-50 rounded-md p-2 border border-gray-200">
+                    <a href="https://www.sololearn.com/certificates/CT-XLZLV8KR" class="text-blue-600 hover:text-blue-800 transition duration-300 text-sm"><span class="info-emphasis">CSS - SoloLearn (2019)</span></a>
+                </div>
+                <div class="bg-gray-50 rounded-md p-2 border border-gray-200">
+                    <a href="https://www.sololearn.com/certificates/CT-PTNUY7W4" class="text-blue-600 hover:text-blue-800 transition duration-300 text-sm"><span class="info-emphasis">C++ - SoloLearn (2020)</span></a>
+                </div>
+                <div class="bg-gray-50 rounded-md p-2 border border-gray-200">
+                    <a href="https://www.sololearn.com/certificates/CT-AJAROBJE" class="text-blue-600 hover:text-blue-800 transition duration-300 text-sm"><span class="info-emphasis">SQL - SoloLearn (2021)</span></a>
+                </div>
+                <div class="bg-gray-50 rounded-md p-2 border border-gray-200">
+                    <a href="https://www.sololearn.com/certificates/CT-DLGV9OWF" class="text-blue-600 hover:text-blue-800 transition duration-300 text-sm"><span class="info-emphasis">PHP - SoloLearn (2022)</span></a>
+                </div>
+                <div class="bg-gray-50 rounded-md p-2 border border-gray-200">
+                    <a href="https://www.sololearn.com/certificates/CT-HHL6B9MR" class="text-blue-600 hover:text-blue-800 transition duration-300 text-sm"><span class="info-emphasis">Responsive Web Design - SoloLearn (2021)</span></a>
+                </div>
+                <div class="bg-gray-50 rounded-md p-2 border border-gray-200">
+                    <a href="https://www.sololearn.com/certificates/CT-MGCMVRLI" class="text-blue-600 hover:text-blue-800 transition duration-300 text-sm"><span class="info-emphasis">HTML - SoloLearn (2019)</span></a>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

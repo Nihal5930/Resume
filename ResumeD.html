@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIHAL MISHRA - Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9fafb;
+            color: #374151;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1.5rem; /* Slightly reduced padding */
+            background-color: #fff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        header {
+            text-align: center;
+            margin-bottom: 1rem; /* Reduced margin */
+        }
+        header h1 {
+            font-size: 2rem; /* Slightly reduced font size */
+            font-weight: bold;
+            color: #2d3748;
+            margin-bottom: 0.25rem; /* Reduced margin */
+        }
+        header p {
+            font-size: 1rem;
+            color: #4a5568;
+            margin-bottom: 0.5rem; /* Reduced margin */
+        }
+        header div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem; /* Reduced gap */
+            font-size: 0.8rem; /* Reduced font size */
+            color: #718096;
+        }
+        header div p {
+            margin-bottom: 0;
+        }
+        .section-title {
+            font-size: 1.25rem; /* Reduced font size */
+            font-weight: bold;
+            color: #2d3748;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.5rem; /* Reduced padding */
+            margin-bottom: 1rem; /* Reduced margin */
+            margin-top: 1.5rem; /* Reduced margin */
+        }
+        .summary-content {
+            font-size: 0.9rem; /* Reduced font size */
+            color: #4a5568;
+            line-height: 1.6;
+        }
+        .skills-container {
+            margin-top: 1rem; /* Reduced margin */
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0.75rem; /* Reduced gap */
+        }
+        .skill-category {
+            margin-bottom: 0;
+        }
+        .skill-category-title {
+            font-size: 1rem; /* Reduced font size */
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 0.25rem; /* Reduced margin */
+        }
+        .skill-list {
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem; /* Reduced gap */
+        }
+        .skill-list li {
+            background-color: #edf2f7;
+            color: #4a5568;
+            padding: 0.3rem 0.75rem; /* Reduced padding */
+            border-radius: 0.375rem; /* Reduced border-radius */
+            font-size: 0.75rem; /* Reduced font size */
+            transition: background-color 0.3s ease, color 0.3s ease;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+            margin-bottom: 0.25rem;  /* Reduced margin bottom */
+        }
+        .skill-list li:hover {
+            background-color: #cbd5e0;
+            color: #2d3748;
+            transform: translateY(-2px);
+        }
+        .experience-item {
+            margin-bottom: 1rem; /* Reduced margin */
+        }
+        .experience-title {
+            font-size: 1rem; /* Reduced font size */
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 0.125rem; /* Reduced margin */
+        }
+        .company-name {
+            font-size: 0.9rem; /* Reduced font size */
+            color: #718096;
+            margin-bottom: 0.25rem; /* Reduced margin */
+        }
+        .date-range {
+            font-size: 0.75rem; /* Reduced font size */
+            color: #a0aec0;
+            margin-bottom: 0.5rem; /* Reduced margin */
+        }
+        .experience-description {
+            list-style: disc;
+            padding-left: 1rem; /* Reduced padding */
+            font-size: 0.8rem; /* Reduced font size */
+            color: #4a5568;
+            margin-bottom: 0.25rem; /* Reduced margin */
+        }
+        .experience-description li {
+            margin-bottom: 0.25rem; /* Reduced margin */
+            line-height: 1.5; /* Reduced line height */
+        }
+        .project-item {
+            margin-bottom: 1rem; /* Reduced margin */
+        }
+        .project-title {
+            font-size: 1rem; /* Reduced font size */
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 0.125rem; /* Reduced margin */
+        }
+        .project-details {
+            font-size: 0.9rem; /* Reduced font size */
+            color: #4a5568;
+            margin-bottom: 0.25rem; /* Reduced margin */
+        }
+        .project-link {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+            font-size: 0.8rem; /* Reduced font size */
+        }
+        .project-link:hover {
+            color: #2563eb;
+        }
+        .education-item {
+            margin-bottom: 1rem; /* Reduced margin */
+        }
+        .education-degree {
+            font-size: 1rem; /* Reduced font size */
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 0.125rem; /* Reduced margin */
+        }
+        .education-institution {
+            font-size: 0.9rem; /* Reduced font size */
+            color: #718096;
+            margin-bottom: 0.25rem; /* Reduced margin */
+        }
+        .certification-item {
+            margin-bottom: 0.5rem; /* Reduced margin */
+        }
+        .certification-title {
+            font-size: 0.9rem; /* Reduced font size */
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 0.125rem; /* Reduced margin */
+        }
+        .certification-link {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+            font-size: 0.8rem; /* Reduced font-size */
+        }
+        .certification-link:hover {
+            color: #2563eb;
+        }
+        @media (min-width: 768px) {
+            .skills-container {
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="container">
+        <header>
+            <h1>NIHAL MISHRA</h1>
+            <p>Senior Web Developer</p>
+            <div>
+                <p><i class="fas fa-envelope text-blue-500"></i> <a href="mailto:nihalm5930@gmail.com">nihalm5930@gmail.com</a></p>
+                <p><i class="fas fa-globe text-blue-500"></i> <a href="https://nihal5930.github.io/NihalMishra/">Portfolio</a></p>
+                <p><i class="fas fa-map-marker-alt text-blue-500"></i> Korba, C.G, India</p>
+                <p>GitHub: <a href="https://github.com/Nihal5930">https://github.com/Nihal5930</a></p>
+            </div>
+        </header>
+        <section>
+            <h2 class="section-title">SUMMARY</h2>
+            <p class="summary-content">
+                Results-driven Senior Web Developer with 3+ years of experience in Laravel, PHP, React.js, and Data Analytics. Proficient in designing scalable web applications, integrating APIs, and leveraging data visualization tools. Passionate about React.js and data analysis, with strong problem-solving skills and expertise in Agile methodologies.
+            </p>
+        </section>
+        <section>
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Backend</h3>
+                    <ul class="skill-list">
+                        <li>PHP</li>
+                        <li>Laravel</li>
+                        <li>Livewire</li>
+                        <li>RESTful APIs</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Frontend</h3>
+                    <ul class="skill-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Bootstrap</li>
+                        <li>Tailwind CSS</li>
+                        <li>JavaScript</li>
+                        <li>AJAX</li>
+                        <li>jQuery</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">API Integration</h3>
+                    <ul class="skill-list">
+                        <li>Postman</li>
+                        <li>ThunderClient</li>
+                        <li>Axios</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Version Control & Tools</h3>
+                    <ul class="skill-list">
+                        <li>Git</li>
+                        <li>GitHub</li>
+                        <li>VSCode</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Responsive Web Design</h3>
+                    <ul class="skill-list">
+                         <li>Cross-browser compatibility</li>
+                         <li>Mobile-first approach</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">React.js</h3>
+                    <ul class="skill-list">
+                        <li>JSX</li>
+                        <li>Components</li>
+                        <li>Props & State</li>
+                        <li>Hooks</li>
+                        <li>useState</li>
+                        <li>useEffect</li>
+                        <li>React Router</li>
+                        <li>API Handling</li>
+                    </ul>
+                </div>
+                 <div class="skill-category">
+                    <h3 class="skill-category-title">Data Analytics</h3>
+                    <ul class="skill-list">
+                        <li>Chart.js</li>
+                        <li>D3.js</li>
+                        <li>Matplotlib</li>
+                         <li>MySQL</li>
+                        <li>SQLite</li>
+                        <li>Pandas</li>
+                        <li>NumPy</li>
+                        <li>Excel & Google Sheets</li>
+                    </ul>
+                </div>
+                 <div class="skill-category">
+                    <h3 class="skill-category-title">Soft Skills</h3>
+                    <ul class="skill-list">
+                        <li>Problem-solving</li>
+                        <li>Team collaboration</li>
+                        <li>Communication</li>
+                        <li>Time management</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 class="section-title">Work Experience</h2>
+            <div class="space-y-3">
+                <div class="experience-item">
+                    <h3 class="experience-title">Senior Web Developer | Business Software India</h3>
+                    <p class="company-name">Dec 2024</p>
+                    <ul class="experience-description">
+                        <li>Expertise in RESTful APIs, payment gateways, cloud services, OAuth authentication, and API testing tools.</li>
+                        <li>Built financial data visualization APIs using Chart.js and Laravel.</li>
+                        <li>Integrated SMTP and SMS APIs for mass messaging (10,000 users).</li>
+                        <li>Built a File Management and Sharing System.</li>
+                        <li>Implemented Event Listener for Task Management.</li>
+                        <li>Converted a large-scale Symfony project to Laravel.</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h3 class="experience-title">Web Developer | Sanspots</h3>
+                    <p class="company-name">Feb 2024 - Aug 2024</p>
+                    <ul class="experience-description">
+                        <li>Integrated AI into Laravel applications.</li>
+                        <li>Developed a ChatGPT-powered financial assistant in Laravel.</li>
+                        <li>Implemented chat session tracking using Laravel Eloquent and MySQL.</li>
+                         <li>Optimized AI API calls.</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h3 class="experience-title">Software Engineer | Deepzone Technology</h3>
+                    <p class="company-name">Dec 2022 - Dec 2023</p>
+                    <ul class="experience-description">
+                        <li>Full Stack Development with Laravel and Livewire.</li>
+                        <li>Integrated ArcGIS Services.</li>
+                        <li>Developed GIS-based project tracking using ArcGIS API and Laravel.</li>
+                        <li>Implemented map features using ArcGIS services.</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h3 class="experience-title">PHP Developer | konsolegroup</h3>
+                    <p class="company-name">Dec 2021 - Dec 2022</p>
+                    <ul class="experience-description">
+                         <li>Frontend & Interactive Technologies.</li>
+                        <li>Developed interactive, data-driven dashboards using D3.js.</li>
+                        <li>Implemented Dropzone.js.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 class="section-title">Education</h2>
+            <div class="space-y-2">
+                <div class="education-item">
+                    <h3 class="education-degree">Master in Computer Application</h3>
+                    <p class="education-institution">Bhilai Institute of Technology (2019 - 2021)</p>
+                </div>
+                <div class="education-item">
+                    <h3 class="education-degree">Bachelor in Computer Application</h3>
+                    <p class="education-institution">SSMV Bhilai (2015 - 2019)</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 class="section-title">Projects</h2>
+            <div class="space-y-2">
+                <div class="project-item">
+                    <h3 class="project-title">NPIS</h3>
+                    <p class="project-details">Laravel, JavaScript, ArcGIS, Chart.js | <a href="https://npis.water.gov.my/" class="project-link">npis.water.gov.my</a></p>
+                </div>
+                <div class="project-item">
+                    <h3 class="project-title">Github Tasks</h3>
+                    <ul class="list-disc list-inside ml-5">
+                        <li>NEXT.js, React.js, API | <a href="https://github.com/Nihal5930/weather" class="project-link">weather</a> | <a href="https://www.linkedin.com/posts/nihal-mishra-7a7b93347_nextjs-openweathermap-webdevelopment-activity-7302898818017075201-q4x8?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFbZpa8BejVBeNFtPZxcesISCJ4SpOdB94w" class="project-link">Video</a></li>
+                        <li>Laravel Livewire User Management | <a href="https://github.com/Nihal5930/user-management" class="project-link">user-management</a></li>
+                        <li>Laravel Livewire Category Management | <a href="https://github.com/Nihal5930/CategoryManagementLivewire" class="project-link">CategoryManagementLivewire</a></li>
+                        <li>Laravel Shazam API | <a href="https://github.com/Nihal5930/ShazamAPI" class="project-link">ShazamAPI</a> | <a href="https://www.linkedin.com/posts/nihal-mishra-7a7b93347_webdevelopment-javascript-laravel-activity-7303044271207510017-tO2E?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFbZpa8BejVBeNFtPZxcesISCJ4SpOdB94w" class="project-link">Video</a></li>
+                    </ul>
+                </div>
+                <div class="project-item">
+                    <h3 class="project-title">Websites</h3>
+                     <ul class="list-disc list-inside ml-5">
+                        <li><a href="https://matsuniversity.ac.in/" class="project-link">matsuniversity.ac.in</a></li>
+                        <li><a href="https://www.magnetothemall.com/" class="project-link">magnetothemall.com</a></li>
+                        <li><a href="https://jobfairindia.in/" class="project-link">jobfairindia.in</a></li>
+                        <li><a href="https://www.ingrainbrands.com/" class="project-link">ingrainbrands.com</a></li>
+                        <li><a href="https://www.konsolegroup.com/" class="project-link">konsolegroup.com</a></li>
+                        <li><a href="https://www.cgsacs.com/" class="project-link">cgsacs.com</a></li>
+                        <li><a href="https://sanspots.in/" class="project-link">sanspots.in</a></li>
+                        <li><a href="https://sanspotsinv.com/" class="project-link">Sanspots.inv</a></li>
+                        <li><a href="https://bex.global/" class="project-link">bex.global</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 class="section-title">Certifications</h2>
+            <div class="space-y-1">
+                <div class="certification-item">
+                    <h3 class="certification-title">CSS - SoloLearn (2019)</h3>
+                    <a href="https://www.sololearn.com/certificates/CT-XLZLV8KR" class="certification-link">View Certificate</a>
+                </div>
+                <div class="certification-item">
+                    <h3 class="certification-title">C++ - SoloLearn (2020)</h3>
+                    <a href="https://www.sololearn.com/certificates/CT-PTNUY7W4" class="certification-link">View Certificate</a>
+                </div>
+                <div class="certification-item">
+                     <h3 class="certification-title">SQL - SoloLearn (2021)</h3>
+                     <a href="https://www.sololearn.com/certificates/CT-AJAROBJE" class="certification-link">View Certificate</a>
+                </div>
+                <div class="certification-item">
+                    <h3 class="certification-title">PHP - SoloLearn (2022)</h3>
+                    <a href="https://www.sololearn.com/certificates/CT-DLGV9OWF" class="certification-link">View Certificate</a>
+                </div>
+                <div class="certification-item">
+                    <h3 class="certification-title">Responsive Web Design - SoloLearn (2021)</h3>
+                     <a href="https://www.sololearn.com/certificates/CT-HHL6B9MR" class="certification-link">View Certificate</a>
+                </div>
+                <div class="certification-item">
+                    <h3 class="certification-title">HTML - SoloLearn (2019)</h3>
+                    <a href="https://www.sololearn.com/certificates/CT-MGCMVRLI" class="certification-link">View Certificate</a>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
